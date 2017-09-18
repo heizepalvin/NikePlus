@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/marathonPlayActBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/lineone" />
+
+    <ImageView
+        android:id="@+id/marathonPlayActGPSTwo"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/marathonPlayActGPSFour"
+        android:layout_alignTop="@+id/marathonPlayActGPSone"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/gpstwo" />
+
+    <ImageView
+        android:id="@+id/marathonPlayActGPSone"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/marathonPlayActGPSTwo"
+        app:srcCompat="@drawable/gpsone" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="25dp">
+
+            <ImageView
+                android:id="@+id/shoesListActLogo"
+                android:layout_width="68dp"
+                android:layout_height="67dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50dp"
+                android:layout_toStartOf="@+id/imageView4"
+                app:srcCompat="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/marathonPlayActMenu"
+                android:layout_width="250dp"
+                android:layout_height="140dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/logomenu" />
+
+            <LinearLayout
+                android:id="@+id/marathonPlayMenuText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/marathonPlayactMenuHome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="HOME"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="PROFILE"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/marathonPlayActMenuTimeline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="TIMELINE"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RUNNING"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="MY COURSE"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="MARATHON"
+                        android:textColor="#000"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="MOISTURE"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="DESIGN"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="SHOE RACK"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="CUSTOM"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="LED"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/imageView4"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="220dp"
+            app:srcCompat="@drawable/marathonsearch" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="42dp"
+        android:layout_marginEnd="12dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="180dp"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="180dp"
+                android:layout_height="70dp"
+                app:srcCompat="@drawable/profilebox" />
+
+            <TextView
+                android:id="@+id/marathonPlayStopWatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="68dp"
+                android:layout_marginTop="15dp"
+                android:text="00:00:00"
+                android:textSize="20dp" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="180dp"
+            android:layout_height="195dp"
+            app:srcCompat="@drawable/box" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="80dp"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginEnd="418dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/linetwo" />
+
+    <ImageView
+        android:id="@+id/marathonPlayActGPSThree"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginStart="40dp"
+        app:srcCompat="@drawable/gpsthree" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/marathonPlayActGPSTwo"
+        android:layout_marginEnd="130dp"
+        android:layout_marginTop="100dp"
+        android:layout_toStartOf="@+id/linearLayout3"
+        app:srcCompat="@drawable/linethree" />
+
+    <ImageView
+        android:id="@+id/marathonPlayActGPSFour"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/imageView13"
+        android:layout_alignStart="@+id/imageView16"
+        android:layout_marginStart="44dp"
+        app:srcCompat="@drawable/gpsfour" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="40dp"
+        android:layout_height="70dp"
+        android:layout_alignEnd="@+id/imageView16"
+        android:layout_alignTop="@+id/imageView13"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="22dp"
+        app:srcCompat="@drawable/flag" />
+
+</RelativeLayout>
