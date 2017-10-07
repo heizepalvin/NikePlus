@@ -2,8 +2,6 @@ package com.example.heizepalvin.nikeplus;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
@@ -12,12 +10,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -39,13 +34,18 @@ public class ShoesActivity extends AppCompatActivity{
     private TextView menuListTimeline;
     private TextView menuListMarathon;
     private TextView menuListMarathonCourse;
+    private TextView menuListGraph;
+    private TextView menuListMoisture;
+    private TextView menuListCustom;
+    private TextView menuListLed;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.shoes_list_activity);
 
-        logoMenu = (ImageView) findViewById(R.id.shoesListActLogo);
+        logoMenu = (ImageView) findViewById(R.id.marathonPlayActLogo);
         menuList = (ImageView) findViewById(R.id.shoesListActMenu);
         menuText = (LinearLayout) findViewById(R.id.shoesListActMenuText);
         ll = (LinearLayout) findViewById(R.id.ll);
@@ -56,6 +56,10 @@ public class ShoesActivity extends AppCompatActivity{
         menuListTimeline = (TextView) findViewById(R.id.shoesListActMenuTimeline);
         menuListMarathon = (TextView) findViewById(R.id.shoesListActMenuMarathon);
         menuListMarathonCourse = (TextView) findViewById(R.id.shoesListActMenuCourse);
+        menuListGraph = (TextView) findViewById(R.id.shoesListActMenuGraph);
+        menuListMoisture = (TextView) findViewById(R.id.shoesListActMenuMoisture);
+        menuListCustom = (TextView) findViewById(R.id.shoesListActMenuCustom);
+        menuListLed = (TextView) findViewById(R.id.shoesLIstActMenuLed);
 
         logoMenu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,6 +86,10 @@ public class ShoesActivity extends AppCompatActivity{
         menuListTimeline.setOnClickListener(onClickListener);
         menuListMarathon.setOnClickListener(onClickListener);
         menuListMarathonCourse.setOnClickListener(onClickListener);
+        menuListGraph.setOnClickListener(onClickListener);
+        menuListMoisture.setOnClickListener(onClickListener);
+        menuListCustom.setOnClickListener(onClickListener);
+        menuListLed.setOnClickListener(onClickListener);
 
         vp = (ViewPager) findViewById(R.id.vp);
 
@@ -104,22 +112,58 @@ public class ShoesActivity extends AppCompatActivity{
 
                 case R.id.shoesListActMenuHome:
                     Intent intent = new Intent(ShoesActivity.this,MainActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                     finish();
                     break;
                 case R.id.shoesListActMenuTimeline:
                     Intent intent2 = new Intent(ShoesActivity.this,TimeActivity.class);
+                    intent2.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent2);
                     finish();
                     break;
                 case R.id.shoesListActMenuMarathon:
                     Intent intent3 = new Intent(ShoesActivity.this,MarathonActivity.class);
+                    intent3.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent3);
                     finish();
                     break;
                 case R.id.shoesListActMenuCourse:
-                    Intent intent4 = new Intent(ShoesActivity.this,MarathonPlayActivity.class);
+                    Intent intent4 = new Intent(ShoesActivity.this,MyCourseActivity.class);
+                    intent4.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent4);
+                    finish();
+                    break;
+
+                case R.id.shoesListActMenuGraph:
+
+                    Intent intent5 = new Intent(ShoesActivity.this,ChartActivity.class);
+                    intent5.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent5);
+                    finish();
+
+                    break;
+
+                case R.id.shoesListActMenuMoisture:
+
+                    Intent intent6 = new Intent(ShoesActivity.this,MoistureActivity.class);
+                    intent6.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent6);
+                    finish();
+                    break;
+                case R.id.shoesListActMenuCustom:
+
+                    Intent intent7 = new Intent(ShoesActivity.this,ShoesCustomActivity.class);
+                    intent7.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+                    startActivity(intent7);
+                    finish();
+                    break;
+                case R.id.shoesLIstActMenuLed:
+
+                    Intent intent8 = new Intent(ShoesActivity.this,LedActivity.class);
+                    intent8.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent8);
                     finish();
                     break;
             }

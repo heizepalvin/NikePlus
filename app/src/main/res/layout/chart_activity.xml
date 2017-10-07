@@ -1,19 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/gradient"
     >
 
+    <FrameLayout
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="70dp"
+        android:layout_toEndOf="@+id/frameLayout5">
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/circle" />
+
+        <ImageView
+            android:id="@+id/chartActRightChartFour"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="146dp"
+            android:layout_marginTop="80dp"
+            app:srcCompat="@drawable/circlefour" />
+
+        <ImageView
+            android:id="@+id/chartActRightChartThree"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="88dp"
+            app:srcCompat="@drawable/circlethree" />
+
+        <ImageView
+            android:id="@+id/chartActRightChartTwo"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/circletwo" />
+
+        <ImageView
+            android:id="@+id/chartActRightChartOne"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="35dp"
+            app:srcCompat="@drawable/cirleone" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="380dp"
+        app:srcCompat="@drawable/all"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout5"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="70dp">
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/hexagon" />
+
+        <ImageView
+            android:id="@+id/chartActLeftChart"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="65dp"
+            app:srcCompat="@drawable/hexagontwo" />
+    </FrameLayout>
+
     <LinearLayout
+        android:id="@+id/chartActLL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/ll"
-
-        >
+        android:orientation="horizontal">
 
         <FrameLayout
             android:layout_width="250dp"
@@ -21,7 +97,7 @@
             android:layout_marginLeft="25dp">
 
             <ImageView
-                android:id="@+id/marathonPlayActLogo"
+                android:id="@+id/chartActLogo"
                 android:layout_width="68dp"
                 android:layout_height="67dp"
                 android:layout_alignParentTop="true"
@@ -30,14 +106,14 @@
                 app:srcCompat="@drawable/logo" />
 
             <ImageView
-                android:id="@+id/shoesListActMenu"
+                android:id="@+id/chartActMenu"
                 android:layout_width="250dp"
                 android:layout_height="140dp"
                 android:visibility="gone"
                 app:srcCompat="@drawable/logomenu" />
 
             <LinearLayout
-                android:id="@+id/shoesListActMenuText"
+                android:id="@+id/chartActMenuText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -52,7 +128,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/shoesListActMenuHome"
+                        android:id="@+id/chartActMenuHome"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -69,7 +145,7 @@
                         android:textSize="10sp" />
 
                     <TextView
-                        android:id="@+id/shoesListActMenuTimeline"
+                        android:id="@+id/chartActMenuTimeline"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -78,13 +154,15 @@
                         android:textSize="10sp" />
 
                     <TextView
-                        android:id="@+id/shoesListActMenuGraph"
+                        android:id="@+id/chartActMenuGraph"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="5dp"
                         android:text="GRAPH"
-                        android:textSize="10sp" />
+                        android:textColor="#000"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
@@ -103,7 +181,7 @@
                         android:textSize="12sp" />
 
                     <TextView
-                        android:id="@+id/shoesListActMenuCourse"
+                        android:id="@+id/chartActMenuCourse"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -112,7 +190,7 @@
                         android:textSize="10sp" />
 
                     <TextView
-                        android:id="@+id/shoesListActMenuMarathon"
+                        android:id="@+id/chartActMenuMarathon"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -121,7 +199,7 @@
                         android:textSize="10sp" />
 
                     <TextView
-                        android:id="@+id/shoesListActMenuMoisture"
+                        android:id="@+id/chartActMenuMoisture"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -146,27 +224,28 @@
                         android:textSize="12sp" />
 
                     <TextView
-                        android:id="@+id/shoesListActMenuShoerack"
+                        android:id="@+id/chartActMenuShoerack"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
                         android:text="SHOE RACK"
-                        android:textColor="#000"
                         android:textSize="10sp"
-                        android:textStyle="bold" />
+
+                        />
 
                     <TextView
-                        android:id="@+id/shoesListActMenuCustom"
+                        android:id="@+id/chartActMenuCustom"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="5dp"
                         android:text="CUSTOM"
+
                         android:textSize="10sp" />
 
                     <TextView
-                        android:id="@+id/shoesLIstActMenuLed"
+                        android:id="@+id/chartActMenuLED"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -180,12 +259,4 @@
         </FrameLayout>
     </LinearLayout>
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/vp"
-        android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:layout_marginTop="50dp">
-
-
-    </android.support.v4.view.ViewPager>
 </RelativeLayout>

@@ -42,6 +42,23 @@
             android:screenOrientation="sensorLandscape">
 
         </activity>
+        <activity android:name=".ShoesCustomActivity"
+            android:screenOrientation="sensorLandscape">
+
+        </activity>
+        <activity android:name=".ChartActivity"
+            android:screenOrientation="sensorLandscape">
+
+        </activity>
+        <activity android:name=".LedActivity"
+            android:screenOrientation="sensorLandscape"
+            >
+
+        </activity>
+        <activity android:name=".MoistureActivity"
+            android:screenOrientation="sensorLandscape">
+
+        </activity>
     </application>
 
 </manifest>

@@ -20,7 +20,7 @@
             android:layout_marginLeft="25dp">
 
             <ImageView
-                android:id="@+id/shoesListActLogo"
+                android:id="@+id/marathonPlayActLogo"
                 android:layout_width="68dp"
                 android:layout_height="67dp"
                 android:layout_alignParentTop="true"
@@ -76,6 +76,15 @@
                         android:text="TIMELINE"
                         android:textSize="10sp" />
 
+                    <TextView
+                        android:id="@+id/marathonActMenuGraph"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="GRAPH"
+                        android:textSize="10sp" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -93,7 +102,7 @@
                         android:textSize="12sp" />
 
                     <TextView
-                        android:id="@+id/textView5"
+                        android:id="@+id/marathonActMenuMycourse"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -112,7 +121,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/textView7"
+                        android:id="@+id/marathonActMenuMoisture"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -137,7 +146,7 @@
                         android:textSize="12sp" />
 
                     <TextView
-                        android:id="@+id/textView10"
+                        android:id="@+id/marathonActMenuShoerack"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -146,7 +155,7 @@
                         android:textSize="10sp" />
 
                     <TextView
-                        android:id="@+id/textView9"
+                        android:id="@+id/marathonActMenuCustom"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -155,7 +164,7 @@
                         android:textSize="10sp" />
 
                     <TextView
-                        android:id="@+id/textView8"
+                        android:id="@+id/marathonActMenuLed"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"

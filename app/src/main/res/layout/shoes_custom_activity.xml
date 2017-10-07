@@ -3,15 +3,167 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/gradient"
     >
 
+    <RelativeLayout
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/line" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            app:srcCompat="@drawable/shose" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/type" />
+
+        <ImageView
+            android:id="@+id/shoesCustomActfront"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="194dp"
+            android:layout_marginTop="235dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/redfour" />
+
+        <ImageView
+            android:id="@+id/shoesCustomActBack"
+            android:layout_width="210dp"
+            android:layout_height="160dp"
+            android:layout_alignBottom="@+id/shoesCustomActfront"
+            android:layout_alignEnd="@+id/imageView18"
+            android:layout_marginBottom="28dp"
+            android:layout_marginEnd="42dp"
+            app:srcCompat="@drawable/redfive" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+
+        android:layout_marginStart="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="26dp">
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="41dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/customcolor" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/color" />
+
+        <ImageView
+            android:id="@+id/shoesCustomActGreen"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="141dp"
+            app:srcCompat="@drawable/green" />
+
+        <ImageView
+            android:id="@+id/shoesCustomActBlue"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="169dp"
+            android:layout_marginTop="86dp"
+            app:srcCompat="@drawable/blue" />
+
+        <ImageView
+            android:id="@+id/shoesCustomActPurple"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/imageView17"
+            android:layout_alignEnd="@+id/imageView5"
+            android:layout_marginBottom="65dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/purple" />
+
+        <ImageView
+            android:id="@+id/shoesCustomActRed"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="103dp"
+            android:layout_marginTop="81dp"
+            app:srcCompat="@drawable/red" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        android:layout_alignBottom="@+id/relativeLayout3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="9dp">
+
+        <ImageView
+            android:id="@+id/shoesCustomActSaveBtn"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/shoesCustomActFinish"
+            android:layout_marginTop="6dp"
+            app:srcCompat="@drawable/savebtn" />
+
+        <ImageView
+            android:id="@+id/shoesCustomActDelete"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="13dp"
+            app:srcCompat="@drawable/delection" />
+
+        <ImageView
+            android:id="@+id/shoesCustomActFinish"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="28dp"
+            app:srcCompat="@drawable/customsearch" />
+    </RelativeLayout>
+
     <LinearLayout
+        android:id="@+id/shoesCustomActLL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:id="@+id/ll"
 
         >
 
@@ -21,7 +173,7 @@
             android:layout_marginLeft="25dp">
 
             <ImageView
-                android:id="@+id/marathonPlayActLogo"
+                android:id="@+id/shoesCustomActLogo"
                 android:layout_width="68dp"
                 android:layout_height="67dp"
                 android:layout_alignParentTop="true"
@@ -30,14 +182,14 @@
                 app:srcCompat="@drawable/logo" />
 
             <ImageView
-                android:id="@+id/shoesListActMenu"
+                android:id="@+id/shoesCustomActMenu"
                 android:layout_width="250dp"
                 android:layout_height="140dp"
                 android:visibility="gone"
                 app:srcCompat="@drawable/logomenu" />
 
             <LinearLayout
-                android:id="@+id/shoesListActMenuText"
+                android:id="@+id/shoesCustomActMenuText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -52,7 +204,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/shoesListActMenuHome"
+                        android:id="@+id/shoesCustomActMenuHome"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -69,7 +221,7 @@
                         android:textSize="10sp" />
 
                     <TextView
-                        android:id="@+id/shoesListActMenuTimeline"
+                        android:id="@+id/shoesCustomActMenuTimeline"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -78,7 +230,7 @@
                         android:textSize="10sp" />
 
                     <TextView
-                        android:id="@+id/shoesListActMenuGraph"
+                        android:id="@+id/shoesCustomActMenuGraph"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -103,7 +255,7 @@
                         android:textSize="12sp" />
 
                     <TextView
-                        android:id="@+id/shoesListActMenuCourse"
+                        android:id="@+id/shoesCustomActMenuCourse"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -112,7 +264,7 @@
                         android:textSize="10sp" />
 
                     <TextView
-                        android:id="@+id/shoesListActMenuMarathon"
+                        android:id="@+id/shoesCustomActMenuMarathon"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -121,7 +273,7 @@
                         android:textSize="10sp" />
 
                     <TextView
-                        android:id="@+id/shoesListActMenuMoisture"
+                        android:id="@+id/textView7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -146,27 +298,29 @@
                         android:textSize="12sp" />
 
                     <TextView
-                        android:id="@+id/shoesListActMenuShoerack"
+                        android:id="@+id/shoesCustomActMenuShoerack"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
                         android:text="SHOE RACK"
-                        android:textColor="#000"
                         android:textSize="10sp"
-                        android:textStyle="bold" />
+
+                        />
 
                     <TextView
-                        android:id="@+id/shoesListActMenuCustom"
+                        android:id="@+id/textView9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="5dp"
                         android:text="CUSTOM"
-                        android:textSize="10sp" />
+                        android:textColor="#000"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/shoesLIstActMenuLed"
+                        android:id="@+id/textView8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -180,12 +334,4 @@
         </FrameLayout>
     </LinearLayout>
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/vp"
-        android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:layout_marginTop="50dp">
-
-
-    </android.support.v4.view.ViewPager>
 </RelativeLayout>

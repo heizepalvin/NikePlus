@@ -35,6 +35,12 @@ public class MarathonActivity extends AppCompatActivity {
 
     private TextView marathonActMenuHome;
     private TextView marathonActMenuTimeline;
+    private TextView marathonActMenuGraph;
+    private TextView marathonActMenuMycourse;
+    private TextView marathonActMenuMoisture;
+    private TextView marathonActMenuShoeRack;
+    private TextView marathonActMenuCustom;
+    private TextView marathonActMenuLED;
 
     //코스마다 사람 이미지, gps위치, 반경을 나타내는 원
 
@@ -223,7 +229,7 @@ public class MarathonActivity extends AppCompatActivity {
 
         //상단 메뉴
 
-        marathonActLogo = (ImageView) findViewById(R.id.shoesListActLogo);
+        marathonActLogo = (ImageView) findViewById(R.id.marathonPlayActLogo);
         marathonActMenu = (ImageView) findViewById(R.id.marathonActMenu);
         marathonActMenuText = (LinearLayout) findViewById(R.id.marathonActMenuText);
 
@@ -254,6 +260,12 @@ public class MarathonActivity extends AppCompatActivity {
 
         marathonActMenuHome = (TextView) findViewById(R.id.marathonActMenuHome);
         marathonActMenuTimeline = (TextView) findViewById(R.id.marathonActMenuTimeline);
+        marathonActMenuGraph = (TextView) findViewById(R.id.marathonActMenuGraph);
+        marathonActMenuMycourse = (TextView) findViewById(R.id.marathonActMenuMycourse);
+        marathonActMenuMoisture = (TextView) findViewById(R.id.marathonActMenuMoisture);
+        marathonActMenuShoeRack = (TextView) findViewById(R.id.marathonActMenuShoerack);
+        marathonActMenuCustom = (TextView) findViewById(R.id.marathonActMenuCustom);
+        marathonActMenuLED = (TextView) findViewById(R.id.marathonActMenuLed);
 
         marathonActMenuHome.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -276,7 +288,65 @@ public class MarathonActivity extends AppCompatActivity {
             }
         });
 
+        marathonActMenuGraph.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                Intent intent = new Intent(MarathonActivity.this,TimeActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        marathonActMenuMycourse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MarathonActivity.this,MyCourseActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        marathonActMenuMoisture.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MarathonActivity.this,MoistureActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        marathonActMenuShoeRack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MarathonActivity.this,ShoesActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        marathonActMenuCustom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MarathonActivity.this,ShoesCustomActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        marathonActMenuLED.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MarathonActivity.this,LedActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
 
 

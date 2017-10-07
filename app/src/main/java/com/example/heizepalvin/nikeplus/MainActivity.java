@@ -33,13 +33,21 @@ public class MainActivity extends AppCompatActivity {
 
     private boolean friendList = false;
 
-
+    private ImageView mainActMarathonPlayBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mainActMarathonPlayBtn = (ImageView) findViewById(R.id.mainActMarathonPlayBtn);
+        mainActMarathonPlayBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,MarathonPlayActivity.class);
+                startActivity(intent);
+            }
+        });
 
         tom = (ImageView) findViewById(R.id.tomphoto);
         menu = (RelativeLayout) findViewById(R.id.menu);

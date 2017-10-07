@@ -2,6 +2,7 @@ package com.example.heizepalvin.nikeplus;
 
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
@@ -49,6 +50,11 @@ public class TimeActivity extends AppCompatActivity{
     private TextView timeActMenuHome;
     private TextView timeActMenuMarathon;
     private TextView timeActMenuMyCourse;
+    private TextView timeActMenuGraph;
+    private TextView timeActMenuMoisture;
+    private TextView timeActMenuShoeRack;
+    private TextView timeActMenuCustom;
+    private TextView timeActMenuLED;
 
     //좋아요 버튼
 
@@ -110,7 +116,7 @@ public class TimeActivity extends AppCompatActivity{
         timeActMenu = (ImageView) v.findViewById(R.id.timeActMenu);
         Glide.with(this).load(R.drawable.logomenu).override(200,200).dontAnimate().into(timeActMenu);
         timeActMenu.setOnClickListener(onClickListener);
-        timeActLogo = (ImageView) v.findViewById(R.id.shoesListActLogo);
+        timeActLogo = (ImageView) v.findViewById(R.id.marathonPlayActLogo);
         Glide.with(this).load(R.drawable.logo).override(100,100).dontAnimate().into(timeActLogo);
         timeActLogo.setOnClickListener(onClickListener);
         timeActMenuText = (LinearLayout) v.findViewById(R.id.timeActMenuText);
@@ -127,6 +133,12 @@ public class TimeActivity extends AppCompatActivity{
         timeActMenuHome = (TextView) v.findViewById(R.id.timeActMenuHome);
         timeActMenuMarathon = (TextView) v.findViewById(R.id.timeActMenuMarathon);
         timeActMenuMyCourse = (TextView) v.findViewById(R.id.timeActMenuMyCourse);
+        timeActMenuGraph = (TextView) v.findViewById(R.id.timeActMenuGraph);
+        timeActMenuMoisture = (TextView) v.findViewById(R.id.timeActMenuMoisture);
+        timeActMenuShoeRack = (TextView) v.findViewById(R.id.timeActMenuShoerack);
+        timeActMenuCustom = (TextView) v.findViewById(R.id.timeActMenuCustom);
+        timeActMenuLED = (TextView) v.findViewById(R.id.timeActMenuLed);
+
 
         timeActMenuHome.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -154,6 +166,52 @@ public class TimeActivity extends AppCompatActivity{
                 finish();
             }
         });
+
+        timeActMenuGraph.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TimeActivity.this, ChartActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        timeActMenuMoisture.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TimeActivity.this, MoistureActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        timeActMenuShoeRack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TimeActivity.this, ShoesActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        timeActMenuCustom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TimeActivity.this, ShoesCustomActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        timeActMenuLED.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TimeActivity.this, LedActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
 
         ZoomView zoomView = new ZoomView(this);
         zoomView.addView(v);
@@ -348,7 +406,7 @@ public class TimeActivity extends AppCompatActivity{
 
                 //상단 메뉴
 
-                case R.id.shoesListActLogo:
+                case R.id.marathonPlayActLogo:
 
                     timeActLogo.setVisibility(View.GONE);
                     timeActMenu.setVisibility(View.VISIBLE);
